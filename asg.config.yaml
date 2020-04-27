@@ -49,8 +49,7 @@ allow_incoming:
     protocol: udp
   - port: 22
     range: 0.0.0.0/0
-    protocol: udp
-
+    protocol: tcp
 # connect to instance using session manager
 allow_ssh: true
 
