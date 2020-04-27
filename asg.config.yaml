@@ -47,9 +47,12 @@ allow_incoming:
   - port: 16384-32768
     range: 0.0.0.0/0
     protocol: udp
+  - port: 22
+    range: 0.0.0.0/0
+    protocol: udp
 
 # connect to instance using session manager
-allow_ssh: false
+allow_ssh: true
 
 # device mappings - encrypt by default, take size as parameter
 # add any additional drives you may want to use as data drives. Any data drives should
